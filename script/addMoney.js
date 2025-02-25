@@ -5,7 +5,7 @@ document.getElementById('add-money')
         const convertedAmount = parseFloat(amount);
         const pin = document.getElementById('pin').value;
         const convertedPin = parseInt(pin);
-        const mainBalance = document.getElementById('main-banalce').innerText;
+        const mainBalance = document.getElementById('main-balance').innerText;
         const convertedMainBalance = parseFloat(mainBalance);
         const accountNumber = document.getElementById('account-number').value;
         const convertedAccountNumber = accountNumber.toString();
@@ -13,7 +13,7 @@ document.getElementById('add-money')
         if(convertedAccountNumber.length === 11){
             if (convertedPin === 1234) {
                 const sum = convertedAmount + convertedMainBalance;
-                document.getElementById('main-banalce').innerText = sum;
+                document.getElementById('main-balance').innerText = sum;
             }
             else {
                alert('Pin is incorrect');

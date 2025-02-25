@@ -34,13 +34,13 @@
           <img class="w-12" src="./payoo.png" alt="" />
           <div>
             <h3 class="text-[rgba(8, 8, 8, 0.9)] text-xl font-extrabold">
-              $ <span id="main-banalce">45000</span>
+              $ <span id="main-balance">45000</span>
             </h3>
             <h2 class="text-[rgba(8, 8, 8, 0.5)] text-[14px]">
               Available Balance
             </h2>
           </div>
-          <button class="text-[#080808] opacity-55 text-[14px] btn rounded-md">
+          <button class="text-[#080808] opacity-55 text-[14px] btn rounded-md hover:bg-blue-100">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -70,37 +70,37 @@
           </p>
 
           <div class="cards grid grid-cols-3 gap-4 mt-6">
-            <div class="box border-1 p-4 rounded-xl">
+            <div id="add-money-div" class="box border-1 p-4 rounded-xl shadow-lg border-none hover:shadow-2xl transition-all hover:bg-blue-50 cursor-pointer">
               <img class="w-6 mx-auto" src="./asseset/wallet 1.png" alt="" />
               <h2 class="text-[#080808] opacity-70 text-[14px] text-center">
                 Add Money
               </h2>
             </div>
-            <div class="box border-1 p-4 rounded-xl">
+            <div id="cash-out-div" class="box border-1 p-4 rounded-xl shadow-lg border-none hover:shadow-2xl transition-all hover:bg-blue-50 cursor-pointer">
               <img class="w-6 mx-auto" src="./asseset/send 1.png" alt="" />
               <h2 class="text-[#080808] opacity-70 text-[14px] text-center">
                 Cashout
               </h2>
             </div>
-            <div class="box border-1 p-4 rounded-xl">
+            <div class="box border-1 p-4 rounded-xl shadow-lg border-none hover:shadow-2xl transition-all hover:bg-blue-50 cursor-pointer">
               <img class="w-6 mx-auto" src="./asseset/money 1.png" alt="" />
               <h2 class="text-[#080808] opacity-70 text-[14px] text-center">
                 Transfer Money
               </h2>
             </div>
-            <div class="box border-1 p-4 rounded-xl">
+            <div class="box border-1 p-4 rounded-xl shadow-lg border-none hover:shadow-2xl transition-all hover:bg-blue-50 cursor-pointer">
               <img class="w-6 mx-auto" src="./asseset/financial 1.png" alt="" />
               <h2 class="text-[#080808] opacity-70 text-[14px] text-center">
                 Get Bonus
               </h2>
             </div>
-            <div class="box border-1 p-4 rounded-xl">
+            <div class="box border-1 p-4 rounded-xl shadow-lg border-none hover:shadow-2xl transition-all hover:bg-blue-50 cursor-pointer">
               <img class="w-6 mx-auto" src="./asseset/purse 1.png" alt="" />
               <h2 class="text-[#080808] opacity-70 text-[14px] text-center">
                 Pay Bill
               </h2>
             </div>
-            <div class="box border-1 p-4 rounded-xl">
+            <div class="box border-1 p-4 rounded-xl shadow-lg border-none hover:shadow-2xl transition-all hover:bg-blue-50 cursor-pointer">
               <img
                 class="w-6 mx-auto"
                 src="./asseset/transaction 1.png"
@@ -113,7 +113,7 @@
           </div>
         </section>
         <!-- add money section -->
-        <section class="mt-10 w-11/12 mx-auto bg-slate-50">
+        <section id="add-money-section" class="mt-10 w-11/12 mx-auto bg-slate-50">
           <h2 class="text-xl font-semibold text-[#080808] opacity-90">
             Add Money
           </h2>
@@ -136,7 +136,7 @@
                     id="account-number"
                       type="number"
                       placeholder="Enter 11 digit account number"
-                      class="input input-bordered"
+                      class="input input-bordered rounded-xl "
                       required
                     />
 
@@ -147,7 +147,7 @@
                     <input id="amount"
                       type="email"
                       placeholder="Add Amount to withdraw"
-                      class="input input-bordered"
+                      class="input input-bordered rounded-xl"
                       required
                     />
                   </div>
@@ -159,7 +159,7 @@
                     id="pin"
                       type="password"
                       placeholder="Enter 4 digit pin number"
-                      class="input input-bordered"
+                      class="input input-bordered rounded-xl"
                       required
                     />
                     <label class="label">
@@ -169,7 +169,61 @@
                     </label>
                   </div>
                   <div class="form-control mt-6">
-                    <button id="add-money" class="btn btn-wide bg-[#0874F2] text-white text-sm font-semibold ">Add Money</button>
+                    <button id="add-money" class="btn w-full rounded-xl bg-[#0874F2] text-white text-sm font-semibold ">Add Money</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- cash out section  -->
+
+         <section id="cash-out-section" class="mt-10 w-11/12 mx-auto bg-slate-50">
+          <h2 class="text-xl font-semibold text-[#080808] opacity-90">
+            Cash Out
+          </h2>
+          <div class="">
+            <div class="">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                     <label class="label">
+                      <span class="label-text">Agent Number</span>
+                    </label>
+                    <input
+                    id="cashOutAccount-number"
+                      type="number"
+                      placeholder="Enter 11 digit number"
+                      class="input input-bordered rounded-xl "
+                      required
+                    />
+
+
+                    <label class="label">
+                      <span class="label-text">Amount</span>
+                    </label>
+                    <input id="cashOut-amount"
+                      type="email"
+                      placeholder="Enter amount to withdraw"
+                      class="input input-bordered rounded-xl"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Pin Number</span>
+                    </label>
+                    <input
+                    id="cashOut-pin"
+                      type="password"
+                      placeholder="Enter 4 digit pin number"
+                      class="input input-bordered rounded-xl"
+                      required
+                    />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="cashOut-btn" class="btn w-full rounded-xl bg-[#0874F2] text-white text-sm font-semibold ">Withdraw Money</button>
                   </div>
                 </form>
               </div>
@@ -181,5 +235,7 @@
 
 
     <script src="./script/addMoney.js"></script>
+    <script src="./script/togol.js"></script>
+    <script src="./script/cashout.js"></script>
   </body>
 </html>
