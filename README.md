@@ -50,7 +50,7 @@ mobile-banking-app/
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-username/mobile-banking-app.git
+   git clone https://github.com/rifat-hasan121/mobile-banking-app
 cd mobile-banking-app
 
 
