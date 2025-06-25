@@ -19,8 +19,8 @@ This project was built using **HTML**, **Tailwind CSS**, and **Vanilla JavaScrip
 
 ## 🚀 Live Demo & Repository
 
-🔗 **Live Site:** [Add Your Live URL Here](#)  
-🔗 **GitHub Repo:** [Add Your Repository Link Here](#)
+🔗 **Live Site:** https://rifat-hasan121.github.io/mobile-banking-app
+
 
 ---
 
